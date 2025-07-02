@@ -15,5 +15,5 @@ int main()
 
     distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
 
-    printf("the distance between the points is = %f",distance);
+    printf("the distance between the points is = %f",sqrt(distance));
 }
