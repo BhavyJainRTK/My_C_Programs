@@ -17,5 +17,5 @@ int main()
     y = z;
     z = ex;
     
-    printf("now value in x = %d, y = %d, z= %d",x,y,z);
+    printf("now value in x = %d, y = %d, z = %d",x,y,z);
 }
