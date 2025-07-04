@@ -15,4 +15,5 @@ int main()
 
     printf("the area is = %.2f square unit.\n",area);
     printf("the perimeter is = %.2f unit.",perimeter);
+    
 }
