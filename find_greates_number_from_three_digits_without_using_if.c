@@ -30,7 +30,4 @@ int main()
         printf("%d is the greatest number",c);
         break;
     }
-    
-    
-    
 }
