@@ -15,6 +15,6 @@ int main()
         num = num / 10;
         i = i / 10;
     }
-    printf("NUMBER > %d",fn);
+    printf("REVERSED NUMBER > %d",fn);
     
 }
