@@ -19,4 +19,4 @@ int main()
         a = b;
         b = sum;
     } while (i < num);
-}
+ }
