@@ -14,6 +14,8 @@ int main()
     // SAVI NUMBER IN ARRAY A AND B.
     // USING LOOP.
 
+    // YOU HABE TO ENTER THE NUMBER IN ASCENDING IN BOTH ARRAY.
+
     printf("HOW MANY NUMBER YOU WANT TO ENTER IN ARRAY A > ");
     scanf("%d", &x);
 
