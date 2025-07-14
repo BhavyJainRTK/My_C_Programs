@@ -26,10 +26,10 @@ int main()
         printf("> ");
         scanf("%d", &b[j]);
     }
-    
-    i =0;
-    j =0;
-    k=0;
+
+    i = 0;
+    j = 0;
+    k = 0;
     while (i < x && j < y)
     {
         if (a[i] < b[j])
