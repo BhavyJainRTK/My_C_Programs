@@ -1,24 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    int num,i,j;
-    int ans[32],x;
+    int num, i, j;
+    int ans[32], x;
 
     printf("ENTER YOUR NUMBER > ");
-    scanf("%d",&num);
+    scanf("%d", &num);
 
-    printf("%d IN BINARY > ",num);
+    printf("%d IN BINARY > ", num);
 
-    for ( i = 0; num > 0; i++)
+    for (i = 0; num > 0; i++)
     {
         x = num % 2;
         num = num / 2;
         ans[i] = x;
     }
 
-    for ( j = i - 1; j >= 0 ; j = j - 1)
+    for (j = i - 1; j >= 0; j = j - 1)
     {
-        printf("%d ",ans[j]);
+        printf("%d ", ans[j]);
     }
 }
