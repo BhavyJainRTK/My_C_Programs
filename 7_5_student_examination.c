@@ -34,7 +34,7 @@ int main()
             {
                 printf("MARKS IN [%d] SUNBJECT > ", j);
                 scanf("%f", &student[i][j]);
-                sum = sum + student[i][j];    // SAVEING SUM OF MARKS
+                sum = sum + student[i][j]; // SAVEING SUM OF MARKS
             }
         }
     }
@@ -52,7 +52,7 @@ int main()
         printf("\n");
     }
 
-    // FINING MAXIMUM MARKS AND STUDENT NAME 
+    // FINING MAXIMUM MARKS AND STUDENT NAME
     // SUBJECT 1.
 
     printf("\n\n");
