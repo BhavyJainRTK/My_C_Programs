@@ -2,6 +2,8 @@
 
 int main()
 {
+    // DECLEARING THE VARIABLE AND MATRIX.
+
     int matrixA[10][10];
     int matrixB[10][10];
     int n;
@@ -10,6 +12,8 @@ int main()
     scanf("%d",&n);
     printf("ENTER THE MATRIX A ");
     
+    // TAKING INPUT FROM USER MATRIX A.
+
     for ( int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -18,6 +22,8 @@ int main()
             scanf("%d",&matrixA[i][j]);
         }
     }
+
+    // TAKING INPUT FROM USER MATRIX B.
 
     printf("ENTER THE MATRIX B ");
 
@@ -31,6 +37,8 @@ int main()
         
     }
 
+    // ADDING THE BOTH MATRIX.
+
     printf("\n");
     printf("MATRIX AFTER ADDING\n");
 
@@ -42,6 +50,8 @@ int main()
         }
         printf("\n");
     }
+
+    // UBTRACING THE MATRIX.
 
     printf("\n");
     printf("MATRIX AFTER SUBTRACTING\n");
