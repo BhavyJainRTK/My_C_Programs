@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
     // DECLEARING VARIABLE AND ARRAY.
 
     int number[1][10];
-    int sum=0,n=1;
+    int sum = 0, n = 1;
 
     printf("ENTER THE ISBN NUMBER \n");
     printf("PRESS ENTER AFTER EACH DIGIT ");
@@ -14,7 +14,7 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         printf("> ");
-        scanf("%d",&number[0][i]);
+        scanf("%d", &number[0][i]);
     }
 
     // MULTIPLYING THE NUMBER.
@@ -25,7 +25,8 @@ int main()
         n = n + 1;
     }
 
-    // CHECKING THE NUMBER IS VELID OR NOT
+    // CHECKING THE NUMBER IS VELID OR NOT.
+
     if ((sum % 11) == number[0][9])
     {
         printf("GREAT!! ITS A VELID ISBN NUMBER.");
