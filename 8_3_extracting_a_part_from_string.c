@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -13,16 +13,16 @@ int main()
 
     printf("enter a string\n");
     printf("> ");
-    fgets(string1,sizeof(string1),stdin);
+    fgets(string1, sizeof(string1), stdin);
 
     printf("how much string you want to print (size) > ");
-    scanf("%d",&n);
+    scanf("%d", &n);
 
     // COPYING THE STRING.
 
-    strncpy(string2,string1,n);
+    strncpy(string2, string1, n);
     string2[n] = '\0';
 
     // DISPLAYING THE FINAL STRING.
-    printf("now the string is %s",string2);
+    printf("now the string is %s", string2);
 }
