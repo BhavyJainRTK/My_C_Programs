@@ -20,13 +20,13 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        printf("ENTER THE ROLL NO. OF {%d} STUDENT > ", i+1);
+        printf("ENTER THE ROLL NO. OF {%d} STUDENT > ", i + 1);
         scanf("%d", &roll[i]);
 
-        printf("ENTER THE NAME OF {%d} STUDENT > ", i+1);
+        printf("ENTER THE NAME OF {%d} STUDENT > ", i + 1);
         scanf("%s", &name[i]);
 
-        printf("ENTER MARKS OF {%d} STUDENT > ", i+1);
+        printf("ENTER MARKS OF {%d} STUDENT > ", i + 1);
         scanf("%d", &marks[i]);
     }
 
@@ -38,7 +38,7 @@ int main()
         {
             if (roll[i] > roll[j])
             {
-                
+
                 // swaping roll numbers.
 
                 temp_roll = roll[i];
@@ -61,7 +61,7 @@ int main()
     }
 
     // displaying the table.
-    
+
     printf("\n");
     printf("\n%-15s %-15s %-15s\n", "Roll No.", "Name", "Marks");
     for (int i = 0; i < n; i++)
