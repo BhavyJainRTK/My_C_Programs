@@ -3,14 +3,20 @@
 
 int main()
 {
+    // declearing the string and variable.
+
     char name[10][10];
     int roll[10], temp_roll;
     int marks[10], temp_marks;
     char temp[10];
     int n;
 
+    // taking input from user.
+
     printf("how many student name you want to enter > ");
     scanf("%d", &n);
+
+    // saveing the data from user in string using loop.
 
     for (int i = 0; i < n; i++)
     {
@@ -24,19 +30,27 @@ int main()
         scanf("%d", &marks[i]);
     }
 
+    // soating and swaping the names using loop.
+
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
             if (strcmp(name[i], name[j]) > 0)
             {
+                // swaping name.
+
                 strcpy(temp, name[i]);
                 strcpy(name[i], name[j]);
                 strcpy(name[j], temp);
 
+                // swaping roll numbers.
+
                 temp_roll = roll[i];
                 roll[i] = roll[j];
                 roll[j] = temp_roll;
+
+                // swaping marks.
 
                 temp_marks = marks[i];
                 marks[i] = marks[j];
@@ -45,6 +59,8 @@ int main()
         }
     }
 
+    // displaying the table.
+    
     printf("\n");
     printf("\n%-15s %-15s %-15s\n", "Roll No.", "Name", "Marks");
     for (int i = 0; i < n; i++)
