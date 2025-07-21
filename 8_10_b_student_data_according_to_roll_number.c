@@ -36,19 +36,20 @@ int main()
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (strcmp(name[i], name[j]) > 0)
+            if (roll[i] > roll[j])
             {
-                // swaping name.
-
-                strcpy(temp, name[i]);
-                strcpy(name[i], name[j]);
-                strcpy(name[j], temp);
-
+                
                 // swaping roll numbers.
 
                 temp_roll = roll[i];
                 roll[i] = roll[j];
                 roll[j] = temp_roll;
+
+                // swaping name.
+
+                strcpy(temp, name[i]);
+                strcpy(name[i], name[j]);
+                strcpy(name[j], temp);
 
                 // swaping marks.
 
