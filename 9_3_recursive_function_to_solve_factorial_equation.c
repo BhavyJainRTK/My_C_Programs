@@ -2,37 +2,40 @@
 #include <math.h>
 
 int factorial(int n);
-int degree(int n);
+int degree(int x, int n);
 
 int main()
 {
-    
-    int x,m_x = 1, degree_a, ans = 0, f_ans = 0;
 
-    printf("How much step you want > ");
-    scanf("%d", &x); // number of term in equation
+    int x, n, m_n = 1, degree_a, ans = 0, f_ans = 0;
 
-    for (int i = 0; i < x; i++) // loop for solving each term
+    printf("How much terms you want > ");
+    scanf("%d", &n); // number of term in equation
+
+    printf("enter the value of x > ");
+    scanf("%d", &x);
+
+    for (int i = 0; i < n; i++) // loop for solving each term
     {
-        int degree_a = degree(m_x); // numerator 
-        int fact = factorial(m_x); // denominator
+        int degree_a = degree(x, m_n); // numerator
+        int fact = factorial(m_n);     // denominator
 
-        ans = degree_a / fact; // solution 
+        ans = degree_a / fact; // solution
 
         if (i % 2 == 0)
             f_ans = f_ans + ans; // add if even step
         else
             f_ans = f_ans - ans;
 
-        m_x = m_x + 2;
+        m_n = m_n + 2;
     }
 
     printf("%d", f_ans);
 }
 
-int degree(int n)
+int degree(int x, int n)
 {
-    return pow(n, n); // numerator
+    return pow(x, n); // numerator
 }
 
 int factorial(int n) // denominator
