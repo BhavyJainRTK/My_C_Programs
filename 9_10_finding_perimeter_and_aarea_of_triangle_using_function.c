@@ -46,10 +46,9 @@ double area(int n[0])
         s = s + n[i];
     }
 
-    s = s/2.0;
+    s = s / 2.0;
 
     area = sqrt(s * (s - n[0]) * (s - n[1]) * (s - n[2]));
 
     return area;
-    
 }
