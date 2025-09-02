@@ -4,6 +4,7 @@
 int perimeter(int n[0]);
 double area(int n[0]);
 
+
 int main()
 {
     int side[3], f_perimter;
