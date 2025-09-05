@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int largest(int a[3][3],int n);
+int largest(int a[3][3], int n);
 int main()
 {
-    int matrix[3][3],large=0;
+    int matrix[3][3], large = 0;
     printf("Enter the elements of matrix > \n");
 
     for (int i = 0; i < 3; i++)
@@ -14,12 +14,11 @@ int main()
             scanf("%d", &matrix[i][j]);
         }
     }
-    
-    printf("largest number in the matrix > %d",largest(matrix,large));
-    
+
+    printf("largest number in the matrix > %d", largest(matrix, large));
 }
 
-int largest(int a[3][3],int n)
+int largest(int a[3][3], int n)
 {
     for (int i = 0; i < 3; i++)
     {
@@ -29,8 +28,7 @@ int largest(int a[3][3],int n)
             {
                 n = a[i][j];
             }
-            
         }
-    } 
+    }
     return n;
 }
