@@ -45,14 +45,14 @@ int main()
         }
         else
         {
-            high = mid + 1;
+            low = mid + 1;
         }
 
         // PRINTING IF NOT FOUND;
+    }
 
-        if (!found)
+    if (!found)
         {
             printf("THE KEY NOT FOUND IN THE ARRAY.");
         }
-    }
 }
