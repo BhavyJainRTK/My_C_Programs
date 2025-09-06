@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int sorting(int a[10],int n);
 int creat_array(int a[10],int b[10],int n);
+int sorting(int a[10],int n);
 int print_array(int a[10],int b[10],int n);
 
 int main()
