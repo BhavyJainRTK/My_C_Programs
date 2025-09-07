@@ -1,33 +1,42 @@
 #include<stdio.h>
 
-int leap(int n);
+int leap(int year);
+void calender(int year);
+
+int year;
 
 int main()
 {
-    int year;
-    
-    if (leap(year) == 0)
+    calender(year);
+}
+
+int leap(int year)
+{
+    printf("Enter the year > ");
+    scanf("%d",&year);
+
+    if ((year%4) == 0)
     {
-        printf("it's a leap year");
+        printf("it's a leap year\n");
     }
     else
     {
-        printf("it's not leap year");
+        printf("it's not a leap year\n");
     }
 }
 
-int leap(int n)
+void calender(int year)
 {
-    printf("Enter the year > ");
-    scanf("%d",&n);
+    int days[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    char *months[100] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
 
-    if ((n%4) == 0)
+    if (leap(year) == 0)
     {
-        return 0;
+        days[1] = 29;
     }
-    else
+
+    for (int i = 0; i < 12 ; i++)
     {
-        return 1;
+        printf("%-12s > %d\n",months[i],days[i]);
     }
-    
 }
