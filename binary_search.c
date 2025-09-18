@@ -27,6 +27,7 @@ int main()
 
         if (mid == find)
         {
+            found = 1;
             printf("found number at %d",mid+1);
             break;
         }
@@ -37,6 +38,9 @@ int main()
         else
         low = mid+1;
     }
-    
 
+    if (!found)
+    {
+        printf("number not found");
+    }
 }
