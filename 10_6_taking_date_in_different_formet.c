@@ -3,6 +3,8 @@
 
 int number,temp;
 
+// creating datatype
+
 struct date
 {
     int date;
@@ -10,6 +12,8 @@ struct date
     int year;
     char f_month[20];
 };
+
+// converting number into date month and year
 
 void saving(struct date *d)
 {
