@@ -27,6 +27,7 @@ void inputdate(struct date *d)
 
 void check(struct date d)
 {
+    // checking number of days in perticular month
 
     if (strcmp(d.month, "january") == 0 || strcmp(d.month, "march") == 0 ||
         strcmp(d.month, "may") == 0 || strcmp(d.month, "july") == 0 ||
@@ -52,6 +53,7 @@ void check(struct date d)
 
     else if (strcmp(d.month, "february") == 0)
     {
+        // checking leapyear
 
         if (d.year%4 == 0)
         {
@@ -74,6 +76,8 @@ void check(struct date d)
 
 void display(struct date d)
 {
+    // giving the number to month
+    
     if (strcmp(d.month, "january") == 0)
     d.month_n = 1;
     else if (strcmp(d.month, "february") == 0)
