@@ -17,17 +17,9 @@ int main()
 
     // taking input from user 
 
-    scanf("%d %d %d",
-          &first.hour,
-          &first.min,
-          &first.sec);
+    scanf("%d %d %d",&first.hour,&first.min,&first.sec);
 
     // print the result
     
-    printf("\n%d:%d:%d",
-           first.hour,
-           first.min,
-           first.sec);
-
-    return 0;
+    printf("\n%d:%d:%d",first.hour,first.min,first.sec);
 }
