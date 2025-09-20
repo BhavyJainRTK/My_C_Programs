@@ -131,8 +131,7 @@ int main()
         display(first);
         next_date(&first);
 
-        for (int i = 0; i < 300000000; i++)
-            ;
+        for (int i = 0; i < 300000000; i++);
     }
 
     return 0;
