@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<math.h>
+#include <math.h>
 
 // declearing datatype
 
@@ -49,9 +49,9 @@ void convert_to_inch(struct metric *user, struct british *xuser)
 void convert_to_foot(struct british xuser)
 {
     int foot = xuser.inch / 12;
-    float inch = fmod(xuser.inch , 12);
+    float inch = fmod(xuser.inch, 12);
 
-    printf("\n %d feet and %f inch.",foot,inch);
+    printf("\n %d feet and %f inch.", foot, inch);
 }
 
 int main()
@@ -62,7 +62,6 @@ int main()
     input_m(&user1);
     input_b(&user2);
 
-    convert_to_inch(&user1,&user2);
+    convert_to_inch(&user1, &user2);
     convert_to_foot(user2);
-
 }
