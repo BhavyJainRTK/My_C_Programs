@@ -35,7 +35,7 @@ void name_ac(struct census *first)
 {
     for (int i = 0; i < 4; i++)
     {
-        for (int j = i+1; j < 5; j++)
+        for (int j = i + 1; j < 5; j++)
         {
             if (strcmp(first->city[i], first->city[j]) > 0)
             {
@@ -61,7 +61,7 @@ void population_sort(struct census *first)
 {
     for (int i = 0; i < 4; i++)
     {
-        for (int j = i+1; j < 5; j++)
+        for (int j = i + 1; j < 5; j++)
         {
             if (first->population[i] > first->population[j])
             {
@@ -78,16 +78,16 @@ void population_sort(struct census *first)
                 first->literacy_rate[j] = first->temp_lit;
             }
         }
-    }    
+    }
 }
 
 // sorting literacy rate
 
 void literacy_rate_sort(struct census *first)
 {
-        for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 4; i++)
     {
-        for (int j = i+1; j < 5; j++)
+        for (int j = i + 1; j < 5; j++)
         {
             if (first->literacy_rate[i] > first->literacy_rate[j])
             {
@@ -104,7 +104,7 @@ void literacy_rate_sort(struct census *first)
                 first->literacy_rate[j] = first->temp_lit;
             }
         }
-    } 
+    }
 }
 
 // output
@@ -114,9 +114,8 @@ void display(struct census first)
     printf("\n%-20s %-15s %-15s", "City", "Population", "Literacy Rate");
     for (int i = 0; i < 5; i++)
     {
-        printf("\n%-20s  %-15ld  %-15d",first.city[i],first.population[i],first.literacy_rate[i]);
+        printf("\n%-20s  %-15ld  %-15d", first.city[i], first.population[i], first.literacy_rate[i]);
     }
-    
 }
 
 int main()
@@ -124,7 +123,7 @@ int main()
     struct census first;
 
     // calling functions
-    
+
     input(&first);
 
     printf("\ncities sorted alphabetically by name:\n");
