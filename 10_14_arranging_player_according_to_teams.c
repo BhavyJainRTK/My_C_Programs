@@ -60,7 +60,7 @@ void team_sort(struct cricket *first)
     }
 }
 
-// output 
+// output
 
 void display(struct cricket first)
 {
@@ -81,7 +81,7 @@ void display_team(struct cricket *first)
 
 again:
 {
-    printf("\n\n%s",first->temp_team);
+    printf("\n\n%s", first->temp_team);
     printf("\n%-20s %-15s %-15s", "player", "team", "average");
 
     for (int i = x; i < n; i++)
@@ -93,7 +93,7 @@ again:
         }
         else
         {
-            strcpy(first->temp_team,first->team[i]);
+            strcpy(first->temp_team, first->team[i]);
             goto again;
         }
     }
@@ -106,9 +106,9 @@ int main()
 
     printf("How many play you want to enter > ");
     scanf("%d", &n);
-    
+
     // calling functions
-    
+
     input(&first);
 
     team_sort(&first);
