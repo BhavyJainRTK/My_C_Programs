@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include<string.h>
 
+// global variable
+
 char grade[2];
 int rent;
+
+// creating data type
 
 struct hotel_data
 {
@@ -18,6 +22,8 @@ struct hotel_data
     int temp_rent;
     int temp_rooms;
 };
+
+// input from user
 
 void input(struct hotel_data *first)
 {
@@ -35,6 +41,8 @@ void input(struct hotel_data *first)
         scanf("%d", &first->rooms[i]);
     }
 }
+
+// sorting rent
 
 void charges_sort(struct hotel_data *first)
 {
@@ -66,6 +74,8 @@ void charges_sort(struct hotel_data *first)
     }
 }
 
+// grade condition
+
 void grade_check(struct hotel_data first)
 {
     printf("\n%-20s %-15s %-15s %-15s %-15s", "Hotel", "City", "Grade","Rent","Rooms");
@@ -77,6 +87,8 @@ void grade_check(struct hotel_data first)
         }
     }
 }
+
+// rent conditin or limit
 
 void rent_check(struct hotel_data first)
 {
@@ -94,6 +106,8 @@ int main()
 {
     struct hotel_data first;
 
+    // calling function 
+    
     input(&first);
 
     printf("Enter grade for filter > ");
