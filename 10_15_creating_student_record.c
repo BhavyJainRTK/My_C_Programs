@@ -47,6 +47,8 @@ void input(struct student_record *first)
     }
 }
 
+// sorting according to marks
+
 void marks_sort(struct student_record *first)
 {
     for (int i = 0; i < n-1; i++)
@@ -77,6 +79,8 @@ void marks_sort(struct student_record *first)
     }
 }
 
+// ranking the students
+
 int display(struct student_record first)
 {
     printf("\n%-20s %-15s %-15s", "name", "date of birth", "marks");
@@ -93,6 +97,8 @@ int main()
     printf("How many student you want to enter > ");
     scanf("%d",&n);
 
+    // calling the functions
+    
     input(&first);
     marks_sort(&first);
     display(first);
