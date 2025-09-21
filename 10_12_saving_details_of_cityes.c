@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// declearing datatype
+
 struct census
 {
     char city[5][20];
@@ -11,6 +13,8 @@ struct census
     long int temp_pop;
     int temp_lit;
 };
+
+// input from user
 
 void input(struct census *first)
 {
@@ -24,6 +28,8 @@ void input(struct census *first)
         scanf("%d", &first->literacy_rate[i]);
     }
 }
+
+// sorting alphabetically
 
 void name_ac(struct census *first)
 {
@@ -49,6 +55,8 @@ void name_ac(struct census *first)
     }
 }
 
+// sorting population
+
 void population_sort(struct census *first)
 {
     for (int i = 0; i < 4; i++)
@@ -72,6 +80,8 @@ void population_sort(struct census *first)
         }
     }    
 }
+
+// sorting literacy rate
 
 void literacy_rate_sort(struct census *first)
 {
@@ -97,6 +107,8 @@ void literacy_rate_sort(struct census *first)
     } 
 }
 
+// output
+
 void display(struct census first)
 {
     printf("\n%-20s %-15s %-15s", "City", "Population", "Literacy Rate");
@@ -111,6 +123,8 @@ int main()
 {
     struct census first;
 
+    // calling functions
+    
     input(&first);
 
     printf("\ncities sorted alphabetically by name:\n");
