@@ -42,7 +42,7 @@ int update(int *array)
 
             // shifting elements
 
-            for (int i = n-1; i > position; i--)
+            for (int i = n - 1; i > position; i--)
             {
                 array[i] = array[i - 1];
             }
@@ -76,8 +76,8 @@ int main()
 {
     int main_array[20];
 
-    // calling functions 
-     
+    // calling functions
+
     input(main_array);
     display(main_array);
     update(main_array);
