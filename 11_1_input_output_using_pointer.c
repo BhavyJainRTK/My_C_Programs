@@ -4,14 +4,13 @@ int main()
 {
     int n;
     int array[n];
-    int *p = array; // declearing the  pointer
+    int *p = array; // declearing the pointer
 
     printf("how many number you want to enter > ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++)
     {
-
         scanf(" %d,", (p + i));
     }
 
