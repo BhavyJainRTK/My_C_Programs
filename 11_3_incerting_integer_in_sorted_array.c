@@ -1,6 +1,10 @@
 #include <stdio.h>
 
+// global variable
+
 int n;
+
+// input from user
 
 int input(int *array)
 {
@@ -15,6 +19,8 @@ int input(int *array)
     }
 }
 
+// incerting number
+
 int update(int *array)
 {
     int x;
@@ -26,11 +32,15 @@ int update(int *array)
 
     for (int i = 0; i < n; i++)
     {
+        // taking index
+
         if (x <= array[i])
         {
             position = i;
 
             n++;
+
+            // shifting elements
 
             for (int i = n-1; i > position; i--)
             {
@@ -50,6 +60,8 @@ int update(int *array)
     }
 }
 
+// output statement
+
 int display(int *array)
 {
     printf("(");
@@ -64,6 +76,8 @@ int main()
 {
     int main_array[20];
 
+    // calling functions 
+     
     input(main_array);
     display(main_array);
     update(main_array);
